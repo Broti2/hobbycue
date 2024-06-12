@@ -1,33 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg: #f7f5f9;
+  --purple: #8064a2;
+  --blue: #0096c8;
+  --text: #5c0bc0;
+  --addbg: #F7FDFF;
+--green: #77933C;
+--red: #C0504D;
+
+
+
+}
+#purple:hover .purple{
+
+  color: white;
+}
+.purple{
+  color: var(--purple);
+}
+#green:hover .green{
+
+  color: white;
+}
+.green{
+  color: var(--green);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+#red:hover .red{
+
+  color: white;
+}
+.red{
+  color: var(--red);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#blue:hover .blue{
+
+  color: white;
+}
+.blue{
+  color: var(--blue);
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.show-on-hover:hover .dropdown {
+  display: block;
+}
+
+.ani2{
+  animation: move2 1s;
+}
+.ani{
+  animation: move 1s;
+}
+@keyframes move2 {
+  from{
+    scale: 80%;
+  transform: translateX(-50%);}
+  to{
+    scale: 100%;
+    transform: translateX(0%);}
+  
+}
+@keyframes move {
+  from{
+    scale: 80%;
+  transform: translateX(30%);}
+  to{
+    scale: 100%;
+    transform: translateX(0%);}
+  
 }
