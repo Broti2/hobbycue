@@ -297,7 +297,7 @@ export default function Home() {
       </section>
       <section className="p-[5%] lg:px-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4">
-          <div className="border-2  text-justify rounded-lg  p-[6%]">
+          <div className="border-2 hover:border-[--purple] hover:scale-105 ease-out duration-300 delay-150  text-justify rounded-lg  p-[6%]">
             <div className="flex ">
               <Image height={20} width={40} alt="" src={people}></Image>
               <h1 className="px-4 text-[24px] font-semibold ">People</h1>
@@ -310,7 +310,7 @@ export default function Home() {
               Connect
             </button>
           </div>
-          <div className="border-2 text-justify rounded-lg p-[6%]">
+          <div className="border-2 hover:border-[--green] hover:scale-105 ease-out duration-300 delay-150 text-justify rounded-lg p-[6%]">
             <div className="flex ">
               <Image height={20} width={40} alt="" src={place}></Image>
               <h1 className="px-4 text-[24px] font-semibold ">Place</h1>
@@ -324,7 +324,7 @@ export default function Home() {
               Meet up
             </button>
           </div>
-          <div className="border-2 text-justify rounded-lg p-[6%]">
+          <div className="border-2 hover:border-[--red] hover:scale-105 ease-out duration-300 delay-150 text-justify rounded-lg p-[6%]">
             <div className="flex ">
               <Image height={20} width={40} alt="" src={product}></Image>
               <h1 className="px-4 text-[24px] font-semibold ">Product</h1>
@@ -337,7 +337,7 @@ export default function Home() {
               Got it
             </button>
           </div>
-          <div className="border-2 rounded-lg text-justify p-[6%]">
+          <div className="border-2 hover:border-[--blue] hover:scale-105 ease-out duration-300 delay-150 rounded-lg text-justify p-[6%]">
             <div className="flex ">
               <Image height={20} width={40} alt="" src={program}></Image>
               <h1 className="px-4 text-[24px] font-semibold ">Program</h1>
