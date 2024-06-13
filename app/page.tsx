@@ -532,7 +532,7 @@ export default function Home() {
           </h1>
         </div>
       </footer>
-      <div className={'absolute w-full h-full top-0 backdrop-blur-lg lg:hidden px-4 md:px-48 py-28 '+hidden}>
+      <div className={'fixed w-full h-full top-0 backdrop-blur-lg lg:hidden px-4 md:px-48 py-28 '+hidden}>
       <h1 onClick={()=>(hidden==='hidden'?setHidden(''):setHidden(' hidden '))}  className={'md:text-5xl text-4xl absolute top-2 md:right-5 right-3 cursor-pointer float-end'+hidden}>x</h1>
         <div className="lg:pl-40">
         
